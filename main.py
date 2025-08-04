@@ -53,7 +53,7 @@ print("\n Classification Report:")
 print(classification_report(y_test, y_pred))
 
 #  Prédiction test
-new_text = "I really love this app, it's amazing!"
+new_text = "I like it"
 cleaned = clean_text(new_text)
 vectorized = vectorizer.transform([cleaned])
 prediction = model.predict(vectorized)[0]
